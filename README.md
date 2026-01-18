@@ -44,6 +44,7 @@ Streamlit Interface
 
 ## Repository Structure
 
+```bash
 exegai/
 ├── app/ # Streamlit application
 ├── core/ # Core logic (models, XAI, LLMs)
@@ -51,6 +52,7 @@ exegai/
 ├── configs/ # Configuration files
 ├── scripts/ # Utilities and local execution
 ├── docs/ # Technical documentation
+```
 
 ## Installation
 
@@ -62,21 +64,29 @@ cd exegai
 
 ### 2. Create a virtual environment
 
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
+```
 
 ### 3. Install dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ## Configuration
 
 Create a .env file
 
+```bash
 HF_TOKEN=your_huggingface_token
 MODEL_NAME=meta-llama/Meta-Llama-3-8B-Instruct
+```
 
 ## Running the Application
 
+```bash
 streamlit run app/streamlit_app.py
+```
